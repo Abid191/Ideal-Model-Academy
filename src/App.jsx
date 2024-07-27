@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
     justifyContent: ' flex-start'
   },
   MidPoint: {
-    marginTop: 45,
+    marginTop: 30,
   },
   mailing: {
     fontWeight: 'bold',
@@ -30,6 +30,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     fontSize: 12,
+
   },
 
   Info: {
@@ -62,20 +63,20 @@ const styles = StyleSheet.create({
     fontSize: 14,
   },
   Shead: {
-    fontSize: 14,
+    fontSize: 13,
     marginBottom: 2,
     fontWeight: 'extrabold',
     backgroundColor: '#0000ff',
-    padding: 10,
+    padding: 8,
     color: 'white',
     width: 267
   },
   heading: {
-    fontSize: 14,
+    fontSize: 13,
     marginBottom: 2,
     fontWeight: 'extrabold',
     backgroundColor: '#0000ff',
-    padding: 10,
+    padding: 8,
     color: 'white',
     width: '50%',
   },
@@ -89,9 +90,9 @@ const styles = StyleSheet.create({
     marginLeft: 2
   },
   text: {
-    fontSize: 11,
-    marginTop:4,
-    paddingTop:2,
+    fontSize: 10,
+    marginTop: 4,
+    paddingTop: 2,
     textAlign: 'left'
   },
 
@@ -105,15 +106,14 @@ const styles = StyleSheet.create({
   footer: {
     flexDirection: 'row',
     position: 'absolute',
-    display: 'flex',
-    bottom: 0,
+    display: 'block',
+    bottom: 70,
     borderTop: ' 1px solid black',
     width: '100%',
     fontSize: 10,
     justifyContent: 'space-between',
-    marginTop: 20,
+    // marginTop: 20,
     marginLeft: 30,
-    marginBottom: 10
   },
   footerText: {
     marginTop: 5,
@@ -240,26 +240,28 @@ const MyDocument = () => {
           </View>
 
           {/* End */}
-          <View><Text style={styles.heading } wrap={false} pageBrake="avoid" >Education Information</Text></View>
-          <View style={styles.divider} />
+          <View style={styles.EduWrap} wrap={false} pageBrake="avoid">
+            <View><Text style={styles.heading}  >Education Information</Text></View>
+            <View style={styles.divider} />
 
-          {/* Start */}
-          <View style={styles.Info} wrap={false} pageBrake="avoid">
-            <View style={styles.DamiOne}>
-              <Text style={styles.text}>Title :  </Text>
-              <Text style={styles.text}>Board :  </Text>
-              <Text style={styles.text}>Group :  </Text>
-              <Text style={styles.text}>Subject :  </Text>
-              <Text style={styles.text}>Result :  </Text>
-              <Text style={styles.text}>Marks :  </Text>
-            </View>
-            <View style={styles.DamiTwo}>
-              <Text style={styles.text}>Out of CGPA :  </Text>
-              <Text style={styles.text}>Passing Year :  </Text>
-              <Text style={styles.text}>Duration :  </Text>
-              <Text style={styles.text}>Achievement :  </Text>
-              <Text style={styles.text}>Institute Name :  </Text>
-              <Text style={styles.text}>Grade :  </Text>
+            {/* Start */}
+            <View style={styles.Info} wrap={false} pageBrake="avoid">
+              <View style={styles.DamiOne}>
+                <Text style={styles.text}>Title :  </Text>
+                <Text style={styles.text}>Board :  </Text>
+                <Text style={styles.text}>Group :  </Text>
+                <Text style={styles.text}>Subject :  </Text>
+                <Text style={styles.text}>Result :  </Text>
+                <Text style={styles.text}>Marks :  </Text>
+              </View>
+              <View style={styles.DamiTwo}>
+                <Text style={styles.text}>Out of CGPA :  </Text>
+                <Text style={styles.text}>Passing Year :  </Text>
+                <Text style={styles.text}>Duration :  </Text>
+                <Text style={styles.text}>Achievement :  </Text>
+                <Text style={styles.text}>Institute Name :  </Text>
+                <Text style={styles.text}>Grade :  </Text>
+              </View>
             </View>
           </View>
 
